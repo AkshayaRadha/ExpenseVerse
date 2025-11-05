@@ -1,0 +1,187 @@
+/* 🌟 GLOBAL STYLES */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title-text {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gold-rupee {
+  color: #d4af37;
+  font-size: 1.6rem;
+}
+
+/* 🌙 DARK MODE CARD */
+.card {
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .card {
+  background: #1f1f1f;
+  color: #eee;
+}
+
+/* 🔷 SECTION TITLES */
+.section-title {
+  font-weight: 600;
+  color: #0077ff;
+}
+
+body.dark-mode .section-title {
+  color: #79b8ff;
+}
+
+/* 🧾 TABLE HEADER */
+.table-header {
+  background: linear-gradient(90deg, #007bff, #00b3ff);
+  color: white;
+}
+
+body.dark-mode .table-header {
+  background: linear-gradient(90deg, #004a99, #0072cc);
+}
+
+/* 🎯 FORM INPUTS (TEXT, NUMBER, DATE) */
+input.form-control {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+input.form-control::placeholder {
+  color: #666;
+  opacity: 1;
+}
+/* 🌈 Placeholder Styling (Fixed for both modes) */
+.form-control::placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #bbb;  /* Brighter grey for better contrast */
+  opacity: 1;
+}
+
+
+body.dark-mode input.form-control {
+  background: #2a2a2a;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+/* 🧩 FIXED DROPDOWN STYLING */
+select.form-select {
+  border-radius: 10px;
+  padding: 10px 40px 10px 12px;
+  font-size: 16px;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23007bff' viewBox='0 0 16 16'%3e%3cpath d='M1.5 5l6 6 6-6H1.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px;
+  transition: all 0.3s ease;
+}
+
+select.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+body.dark-mode select.form-select {
+  background-color: #2a2a2a;
+  color: #eee;
+  border: 1px solid #444;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3e%3cpath d='M1.5 5l6 6 6-6H1.5z'/%3e%3c/svg%3e");
+}
+
+/* ✅ FIX DROPDOWN VISIBILITY */
+#monthSelect,
+#yearSelect {
+  position: relative;
+  z-index: 10;
+  height: 45px;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+/* 📊 CHART CONTAINER */
+.chart-container {
+  max-width: 600px;
+  margin: 0 auto;
+  height: 300px;
+}
+
+/* 🌗 DARK-MODE TOGGLE BUTTON */
+.dark-toggle {
+  background: linear-gradient(90deg, #ffd700, #ffb400);
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+body.dark-mode .dark-toggle {
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  color: #fff;
+}
+
+/* 🔘 VIEW BUTTONS */
+.btn-view {
+  background: linear-gradient(135deg, #0077ff, #00b3ff);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-view:hover {
+  background: linear-gradient(135deg, #0056d2, #0088cc);
+}
+
+.btn-view.active {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+
+/* 🟠 ADD & SORT BUTTONS */
+.btn-gradient {
+  background: linear-gradient(135deg, #ffb400, #ff7b00);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* ✨ BUTTON ALIGNMENT */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
