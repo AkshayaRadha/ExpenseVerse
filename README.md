@@ -40,3 +40,6 @@ Project Highlights
 >> Dark mode toggle adds a modern and user-friendly aesthetic.
 >> Efficient use of localStorage for persistent data handling.
 >> Developed as part of my front-end project portfolio to showcase design and coding skills.
+
+Contact :
+akshayaradhavelammal@gmail.com
